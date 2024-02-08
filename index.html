@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+          <form id="city-search">
+            <input
+              class="search"
+              type="search"
+              placeholder="Enter a city.."
+              required
+            />
+            <input class="button" type="submit" value="Search" />
+          </form>
+        </header>
+        <main>
+          <div class="current-weather">
+            <div class="weather-data">
+              <h1 class="city" id="current-city">Bremen</h1>
+              <p class="weather-detials">
+                <span id="current-date"></span>, moderate rain <br />
+                Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+              </p>
+            </div>
+            <div class="degree-fulldata">
+              <span class="degree-icon">🌧️</span>
+              <span class="degree-number" id="current-temperature">8</span>
+              <span class="degree-unit">°C</span>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <p>
+            This project was coded by
+            <a href="#" target="_blank">Mariia Sievierova</a> and is
+            <a href="#" target="_blank"> on GitHub</a> and
+            <a href="#" target="_blank">hosted on Netlify</a>
+          </p>
+        </footer>
+      </div>
+      <script src="./src/app.js"></script>
+</body>
+</html>
